@@ -31,11 +31,8 @@ def load_transaction_data():
         # Load the user's dataset resource asset
         df = pd.read_csv("transactions.csv")
         if 'Amount' not in df.columns:
-    raise ValueError(
-        "transactions.csv must contain an 'Amount' column"
-    )
-    if df.empty:
-    raise ValueError("transactions.csv contains no rows")
+    raise ValueError("transactions.csv must contain an 'Amount' column")
+    if df.empty:raise ValueError("transactions.csv contains no rows")
     
         # Format the core operational tracking vectors
         df['Amount'] = pd.to_numeric(df['Amount'], errors='coerce').fillna(0)
@@ -46,16 +43,9 @@ if 'Customer Name' in df.columns:
 elif len(df.columns) > 1:
     customer_col = df.columns[-1]
 else:
-    raise ValueError(
-        "Unable to determine customer identifier column"
-    )
+    raise ValueError("Unable to determine customer identifier column")
         customer_means = df.groupby(customer_col)['Amount'].transform('mean')
-df['Amount_Deviation_Ratio'] = np.where(
-    customer_means > 0,
-    df['Amount'] / customer_means,
-    1.0
-)
-        
+df['Amount_Deviation_Ratio'] = np.where(customer_means > 0,df['Amount'] / customer_means,1.0)
         return df, True, None
     except Exception as e:
         # Generic backup schema framework structure if file access dropping occurs live
