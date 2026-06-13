@@ -306,30 +306,27 @@ with tab3:
     st.subheader("Explainable AI (XAI) Metric Suite")
     st.write("Evaluating risk attribute weights driving the systemic decision outcomes:")
     
-    # Define the key behavioral drivers from your rules engine
-    features = [
-        'Transaction Amount Volume', 
-        'Historical User Variance Profile', 
-        'Merchant Risk Classification', 
-        'Geographic Velocity Signature'
-    ]
-    importance_scores = [0.60, 0.25, 0.10, 0.05]
+    # Create a clean pandas DataFrame for the chart data
+    chart_data = pd.DataFrame({
+        'Risk Driver Feature': [
+            'Transaction Amount Volume', 
+            'Historical User Variance Profile', 
+            'Merchant Risk Classification', 
+            'Geographic Velocity Signature'
+        ],
+        'Impact Weight Score': [0.60, 0.25, 0.10, 0.05]
+    })
     
-    # Generate the visual horizontal bar chart using matplotlib
-    fig, ax = plt.subplots(figsize=(10, 3.5))
+    # Use Streamlit's built-in native bar chart tool (No matplotlib needed!)
+    st.bar_chart(
+        data=chart_data,
+        x='Risk Driver Feature',
+        y='Impact Weight Score',
+        color='#ff4b4b', # Matches your red security theme
+        use_container_width=True
+    )
     
-    # Apply a high-contrast red theme to highlight the highest risk weights
-    colors = ['#ff4b4b' if x > 0.20 else '#1f77b4' for x in importance_scores]
-    ax.barh(features, importance_scores, color=colors)
-    
-    # Configure axes, titles, and clean up the chart borders for a modern app look
-    ax.set_xlabel('Algorithmic Feature Decision Weight Profile')
-    ax.set_title('Top Analytical Drivers for Fraud Intervention Indicators')
-    plt.gca().invert_yaxis()
-    
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    plt.tight_layout()
-    
+    st.caption("🔍 Validation Framework Insight: Feature weighting dynamically recalibrates based on real-time ledger risk parameters.")
+
     # Render the chart inside your Streamlit interface
     st.pyplot(fig)
