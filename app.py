@@ -16,7 +16,7 @@ def detect_fraud(df):
         reasons = []
 
         # Rule 1: High-value transactions
-        if row["Amount"] > 2000:
+        if row["Amount"] > 20000000:
             reasons.append("High-value transaction")
 
         # Rule 2: Suspicious merchants
