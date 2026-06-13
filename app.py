@@ -30,7 +30,6 @@ st.markdown("""
 def load_transaction_data():
     try:
         # Load the user's dataset resource asset
-        try:
     df = pd.read_csv("transactions.csv")
 
     if 'Amount' not in df.columns:
