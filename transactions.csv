@@ -1,0 +1,12 @@
+TransactionID,Amount,Merchant,Location,Timestamp
+T001,1200,Electronics World,Kampala,2024-01-01 10:00:00
+T002,50,Coffee Shop,Entebbe,2024-01-01 11:00:00
+T003,5000,Luxury Cars,Kampala,2024-01-01 12:00:00
+T004,200,Supermarket,Mbarara,2024-01-01 13:00:00
+T005,3000,Jewelry Store,Kampala,2024-01-01 14:00:00
+T006,75,Pharmacy,Gulu,2024-01-01 15:00:00
+T007,1500,Online Electronics,Kampala,2024-01-01 16:00:00
+T008,20,Fast Food,Entebbe,2024-01-01 17:00:00
+T009,4000,Travel Agency,Kampala,2024-01-01 18:00:00
+T010,100,Bookstore,Mbarara,2024-01-01 19:00:00
+
