@@ -21,15 +21,14 @@ def detect_fraud(df):
         if row["Merchant"] in ["Luxury Cars", "Jewelry Store", "Travel Agency"]:
             reasons.append("Suspicious merchant")
 
-        # Rule 3: Duplicate names (same Name used multiple times)
-        if df["Name"].duplicated(keep=False)[idx]:
+        # Rule 3: Duplicate customer names (same Name used multiple times)
+        if duplicate_mask.iloc[idx]:
             reasons.append("Duplicate customer")
 
         if reasons:
             flagged.append({
-                "TransactionID": row["TransactionID"],
-                "Amount": row["Amount"],
                 "Merchant": row["Merchant"],
+                "Amount": row["Amount"],
                 "Location": row["Location"],
                 "Name": row["Name"],
                 "Date": row["Date"],
