@@ -21,19 +21,22 @@ def detect_fraud(df):
         if row["Merchant"] in ["Luxury Cars", "Jewelry Store", "Travel Agency"]:
             reasons.append("Suspicious merchant")
 
-        # Rule 3: Duplicate accounts (same phone number used multiple times)
-        if df["PhoneNumber"].duplicated(keep=False)[idx]:
-            reasons.append("Duplicate accounts")
+        # Rule 3: Duplicate names (same Name used multiple times)
+        if df["Name"].duplicated(keep=False)[idx]:
+            reasons.append("Duplicate customer")
 
         if reasons:
-            flagged.append({"TransactionID": row["TransactionID"],
-                            "Amount": row["Amount"],
-                            "Merchant": row["Merchant"],
-                            "Location": row["Location"],
-                            "PhoneNumber": row["PhoneNumber"],
-                            "Timestamp": row["Timestamp"],
-                            "Flagged": "☑",
-                            "Reason": ", ".join(reasons)})
+            flagged.append({
+                "TransactionID": row["TransactionID"],
+                "Amount": row["Amount"],
+                "Merchant": row["Merchant"],
+                "Location": row["Location"],
+                "Name": row["Name"],
+                "Date": row["Date"],
+                "Flagged": "☑",
+                "Reason": ", ".join(reasons)
+            })
+
     return pd.DataFrame(flagged)
 
 # Streamlit UI
