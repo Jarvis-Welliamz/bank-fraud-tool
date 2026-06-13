@@ -30,11 +30,21 @@ st.markdown("""
 def load_transaction_data():
     try:
         # Load the user's dataset resource asset
-        df = pd.read_csv("transactions.csv")
-if 'Amount' not in df.columns:
-    raise ValueError("Missing required column: Amount")
-    if df.empty:raise ValueError("transactions.csv contains no rows")
-    
+        try:
+    df = pd.read_csv("transactions.csv")
+
+    if 'Amount' not in df.columns:
+        raise ValueError("transactions.csv must contain an 'Amount' column")
+
+    df['Amount'] = pd.to_numeric(
+        df['Amount'],
+        errors='coerce'
+    ).fillna(0)
+
+    return df, True, None
+
+except Exception as e:
+  
         # Format the core operational tracking vectors
         df['Amount'] = pd.to_numeric(df['Amount'], errors='coerce').fillna(0)
         
