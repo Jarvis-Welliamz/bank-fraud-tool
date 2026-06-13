@@ -234,6 +234,7 @@ tab1, tab2, tab3 = st.tabs([
     "🚨 Live Production Stream", 
     "🕵️‍♂️ Operations Workspace", 
     "📊 Model Analytics & Explainability"
+    "📈 Loss & Impact Analytics"
 ])
 
 # ---- TAB 1: LIVE SIMULATION MONITORING MODE ----
