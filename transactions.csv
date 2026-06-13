@@ -1,4 +1,4 @@
-TransactionID,Date,Location,Merchant,Amount,Customer
+TransactionID,Date,Location,Merchant,Amount,Customer Name
 T001,2024-01-01 08:00:00,Kampala,Luxury Cars,5000,Nakkazzi Lydia
 T002,2024-01-01 09:00:00,Mbarara,Bookstore,100,Rwantonzi Thomas
 T003,2024-01-01 10:00:00,Entebbe,Jewelry Store,3500,Ajuna Fortune Ethan
