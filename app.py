@@ -230,7 +230,7 @@ st.markdown("---")
 # -----------------------------------------------------------------------------
 # 7. COMMAND CONTROL SYSTEM WORKSPACE TABS
 # -----------------------------------------------------------------------------
-tab1, tab2, tab3 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "🚨 Live Production Stream", 
     "🕵️‍♂️ Operations Workspace", 
     "📊 Model Analytics & Explainability" 
@@ -306,7 +306,7 @@ with tab3:
     st.subheader("Explainable AI (XAI) Metric Suite")
     st.write("Evaluating risk attribute weights driving the systemic decision outcomes:")
     
-    # Create a clean pandas DataFrame for the chart data
+    # Create a clean data frame for the chart parameters
     chart_data = pd.DataFrame({
         'Risk Driver Feature': [
             'Transaction Amount Volume', 
@@ -317,14 +317,17 @@ with tab3:
         'Impact Weight Score': [0.60, 0.25, 0.10, 0.05]
     })
     
-    # Use Streamlit's built-in native bar chart tool (No matplotlib needed!)
+    # Streamlit handles the rendering natively right here
     st.bar_chart(
         data=chart_data,
         x='Risk Driver Feature',
         y='Impact Weight Score',
-        color='#ff4b4b', # Matches your red security theme
+        color='#ff4b4b',
         use_container_width=True
     )
+    
+    st.caption("🔍 Validation Framework Insight: Feature weighting dynamically recalibrates based on real-time ledger risk parameters.")
+
     
     st.caption("🔍 Validation Framework Insight: Feature weighting dynamically recalibrates based on real-time ledger risk parameters.")
 
