@@ -1,104 +1,104 @@
 TransactionID,Date,Location,Merchant,Amount,Customer Name
-T001,2024-01-01 08:00:00,Kampala,Luxury Cars,5000,Nakkazzi Lydia
-T002,2024-01-01 09:00:00,Mbarara,Bookstore,100,Rwantonzi Thomas
-T003,2024-01-01 10:00:00,Entebbe,Jewelry Store,3500,Ajuna Fortune Ethan
-T004,2024-01-01 11:00:00,Gulu,Supermarket,200,Besiime Julian Mbabazi
-T005,2024-01-01 12:00:00,Kampala,Travel Agency,4000,Biyinzika Jovia Nakintu
-T006,2024-01-01 13:00:00,Mbarara,Coffee Shop,50,Akampurira Clinton
-T007,2024-01-01 14:00:00,Kampala,Electronics World,1200,Imai Difasi
-T008,2024-01-01 15:00:00,Entebbe,Fast Food,20,Naturinda Shevan
-T009,2024-01-01 16:00:00,Kampala,Luxury Cars,6000,Nankanja Sarah
-T010,2024-01-01 17:00:00,Mbarara,Pharmacy,75,Akite Anna Achar
-T011,2024-01-01 18:00:00,Kampala,Travel Agency,4500,Akatwijuka Bless
-T012,2024-01-01 19:00:00,Gulu,Supermarket,180,Ssegayi Ivan
-T013,2024-01-01 20:00:00,Kampala,Jewelry Store,3200,Ayesiga Elizabeth
-T014,2024-01-01 21:00:00,Entebbe,Bookstore,90,Kalumba Victor Jolly
-T015,2024-01-01 22:00:00,Kampala,Electronics World,1500,Sekayiga Merigo
-T016,2024-01-01 23:00:00,Mbarara,Coffee Shop,60,Twikirize Precious
-T017,2024-01-02 00:00:00,Kampala,Luxury Cars,5200,Masika Sharon
-T018,2024-01-02 01:00:00,Entebbe,Supermarket,250,Opio Jimmy
-T019,2024-01-02 02:00:00,Gulu,Jewelry Store,3100,Mbazzi Emmanuel
-T020,2024-01-02 03:00:00,Kampala,Fast Food,30,Owobusingye Arnold
-T021,2024-01-02 04:00:00,Mbarara,Electronics World,1400,Ssegawa Benjamin
-T022,2024-01-02 05:00:00,Kampala,Travel Agency,4800,Egonu Patrick
-T023,2024-01-02 06:00:00,Entebbe,Supermarket,220,Walukagga Akram
-T024,2024-01-02 07:00:00,Gulu,Bookstore,95,Asio Samantha
-T025,2024-01-02 08:00:00,Kampala,Luxury Cars,5500,Nayiga Doreen
-T026,2024-01-02 09:00:00,Mbarara,Coffee Shop,45,Mwiine Martin
-T027,2024-01-02 10:00:00,Entebbe,Jewelry Store,3300,Akampurira Praise
-T028,2024-01-02 11:00:00,Gulu,Supermarket,210,Nakayima Sonia Naume
-T029,2024-01-02 12:00:00,Kampala,Travel Agency,4600,Ssempebwa James
-T030,2024-01-02 13:00:00,Mbarara,Pharmacy,80,Odokonyero Christopher
-T031,2024-01-02 14:00:00,Entebbe,Electronics World,1600,Ahumuza Drake
-T032,2024-01-02 15:00:00,Gulu,Fast Food,25,Nanyonjo Gloria
-T033,2024-01-02 16:00:00,Kampala,Luxury Cars,5100,Kayongo Trevour
-T034,2024-01-02 17:00:00,Mbarara,Bookstore,110,Nabukalu Majorine
-T035,2024-01-02 18:00:00,Entebbe,Jewelry Store,3400,Birungi Nicholus
-T036,2024-01-02 19:00:00,Gulu,Supermarket,190,Adokorach Nashiba
-T037,2024-01-02 20:00:00,Kampala,Travel Agency,4700,Wabinga Joshua
-T038,2024-01-02 21:00:00,Mbarara,Coffee Shop,55,Nakkazzi Lydia
-T039,2024-01-02 22:00:00,Entebbe,Electronics World,1300,Rwantonzi Thomas
-T040,2024-01-02 23:00:00,Gulu,Fast Food,35,Ajuna Fortune Ethan
-T041,2024-01-03 00:00:00,Kampala,Luxury Cars,5900,Besiime Julian Mbabazi
-T042,2024-01-03 01:00:00,Mbarara,Bookstore,120,Biyinzika Jovia Nakintu
-T043,2024-01-03 02:00:00,Entebbe,Jewelry Store,3600,Akampurira Clinton
-T044,2024-01-03 03:00:00,Gulu,Supermarket,170,Imai Difasi
-T045,2024-01-03 04:00:00,Kampala,Travel Agency,4400,Naturinda Shevan
-T046,2024-01-03 05:00:00,Mbarara,Pharmacy,70,Nankanja Sarah
-T047,2024-01-03 06:00:00,Entebbe,Electronics World,1550,Akite Anna Achar
-T048,2024-01-03 07:00:00,Gulu,Fast Food,40,Akatwijuka Bless
-T049,2024-01-03 08:00:00,Kampala,Luxury Cars,5300,Ssegayi Ivan
-T050,2024-01-03 09:00:00,Mbarara,Bookstore,105,Ayesiga Elizabeth
-T051,2024-01-03 10:00:00,Entebbe,Jewelry Store,3700,Kalumba Victor Jolly
-T052,2024-01-03 11:00:00,Gulu,Supermarket,185,Sekayiga Merigo
-T053,2024-01-03 12:00:00,Kampala,Travel Agency,4900,Twikirize Precious
-T054,2024-01-03 13:00:00,Mbarara,Coffee Shop,65,Masika Sharon
-T055,2024-01-03 14:00:00,Entebbe,Electronics World,1450,Opio Jimmy
-T056,2024-01-03 15:00:00,Gulu,Fast Food,28,Mbazzi Emmanuel
-T057,2024-01-03 16:00:00,Kampala,Luxury Cars,5600,Owobusingye Arnold
-T058,2024-01-03 17:00:00,Mbarara,Bookstore,115,Ssegawa Benjamin
-T059,2024-01-03 18:00:00,Entebbe,Jewelry Store,3250,Egonu Patrick
-T060,2024-01-03 19:00:00,Gulu,Supermarket,205,Walukagga Akram
-T061,2024-01-03 20:00:00,Kampala,Travel Agency,4300,Asio Samantha
-T062,2024-01-03 21:00:00,Mbarara,Pharmacy,85,Nayiga Doreen
-T063,2024-01-03 22:00:00,Entebbe,Electronics World,1350,Mwiine Martin
-T064,2024-01-03 23:00:00,Gulu,Fast Food,32,Akampurira Praise
-T065,2024-01-04 00:00:00,Kampala,Luxury Cars,5400,Nakayima Sonia Naume
+T001,2024-01-01 08:00:00,Kampala,Luxury Cars,50000000,Nakkazzi Lydia
+T002,2024-01-01 09:00:00,Mbarara,Bookstore,1000000,Rwantonzi Thomas
+T003,2024-01-01 10:00:00,Entebbe,Jewelry Store,35000000,Ajuna Fortune Ethan
+T004,2024-01-01 11:00:00,Gulu,Supermarket,2000000,Besiime Julian Mbabazi
+T005,2024-01-01 12:00:00,Kampala,Travel Agency,40000000,Biyinzika Jovia Nakintu
+T006,2024-01-01 13:00:00,Mbarara,Coffee Shop,500000,Akampurira Clinton
+T007,2024-01-01 14:00:00,Kampala,Electronics World,12000000,Imai Difasi
+T008,2024-01-01 15:00:00,Entebbe,Fast Food,2000000,Naturinda Shevan
+T009,2024-01-01 16:00:00,Kampala,Luxury Cars,60000000,Nankanja Sarah
+T010,2024-01-01 17:00:00,Mbarara,Pharmacy,750000,Akite Anna Achar
+T011,2024-01-01 18:00:00,Kampala,Travel Agency,45000000,Akatwijuka Bless
+T012,2024-01-01 19:00:00,Gulu,Supermarket,1800000,Ssegayi Ivan
+T013,2024-01-01 20:00:00,Kampala,Jewelry Store,32000000,Ayesiga Elizabeth
+T014,2024-01-01 21:00:00,Entebbe,Bookstore,900000,Kalumba Victor Jolly
+T015,2024-01-01 22:00:00,Kampala,Electronics World,15000000,Sekayiga Merigo
+T016,2024-01-01 23:00:00,Mbarara,Coffee Shop,600000,Twikirize Precious
+T017,2024-01-02 00:00:00,Kampala,Luxury Cars,52000000,Masika Sharon
+T018,2024-01-02 01:00:00,Entebbe,Supermarket,2500000,Opio Jimmy
+T019,2024-01-02 02:00:00,Gulu,Jewelry Store,31000000,Mbazzi Emmanuel
+T020,2024-01-02 03:00:00,Kampala,Fast Food,300000,Owobusingye Arnold
+T021,2024-01-02 04:00:00,Mbarara,Electronics World,14000000,Ssegawa Benjamin
+T022,2024-01-02 05:00:00,Kampala,Travel Agency,48000000,Egonu Patrick
+T023,2024-01-02 06:00:00,Entebbe,Supermarket,2200000,Walukagga Akram
+T024,2024-01-02 07:00:00,Gulu,Bookstore,950000,Asio Samantha
+T025,2024-01-02 08:00:00,Kampala,Luxury Cars,55000000,Nayiga Doreen
+T026,2024-01-02 09:00:00,Mbarara,Coffee Shop,450000,Mwiine Martin
+T027,2024-01-02 10:00:00,Entebbe,Jewelry Store,33000000,Akampurira Praise
+T028,2024-01-02 11:00:00,Gulu,Supermarket,2100000,Nakayima Sonia Naume
+T029,2024-01-02 12:00:00,Kampala,Travel Agency,46000000,Ssempebwa James
+T030,2024-01-02 13:00:00,Mbarara,Pharmacy,800000,Odokonyero Christopher
+T031,2024-01-02 14:00:00,Entebbe,Electronics World,16000000,Ahumuza Drake
+T032,2024-01-02 15:00:00,Gulu,Fast Food,250000,Nanyonjo Gloria
+T033,2024-01-02 16:00:00,Kampala,Luxury Cars,51000000,Kayongo Trevour
+T034,2024-01-02 17:00:00,Mbarara,Bookstore,1100000,Nabukalu Majorine
+T035,2024-01-02 18:00:00,Entebbe,Jewelry Store,34000000,Birungi Nicholus
+T036,2024-01-02 19:00:00,Gulu,Supermarket,1900000,Adokorach Nashiba
+T037,2024-01-02 20:00:00,Kampala,Travel Agency,47000000,Wabinga Joshua
+T038,2024-01-02 21:00:00,Mbarara,Coffee Shop,550000,Nakkazzi Lydia
+T039,2024-01-02 22:00:00,Entebbe,Electronics World,13000000,Rwantonzi Thomas
+T040,2024-01-02 23:00:00,Gulu,Fast Food,350000,Ajuna Fortune Ethan
+T041,2024-01-03 00:00:00,Kampala,Luxury Cars,59000000,Besiime Julian Mbabazi
+T042,2024-01-03 01:00:00,Mbarara,Bookstore,1200000,Biyinzika Jovia Nakintu
+T043,2024-01-03 02:00:00,Entebbe,Jewelry Store,36000000,Akampurira Clinton
+T044,2024-01-03 03:00:00,Gulu,Supermarket,1700000,Imai Difasi
+T045,2024-01-03 04:00:00,Kampala,Travel Agency,44000000,Naturinda Shevan
+T046,2024-01-03 05:00:00,Mbarara,Pharmacy,700000,Nankanja Sarah
+T047,2024-01-03 06:00:00,Entebbe,Electronics World,15500000,Akite Anna Achar
+T048,2024-01-03 07:00:00,Gulu,Fast Food,400000,Akatwijuka Bless
+T049,2024-01-03 08:00:00,Kampala,Luxury Cars,53000000,Ssegayi Ivan
+T050,2024-01-03 09:00:00,Mbarara,Bookstore,1050000,Ayesiga Elizabeth
+T051,2024-01-03 10:00:00,Entebbe,Jewelry Store,37000000,Kalumba Victor Jolly
+T052,2024-01-03 11:00:00,Gulu,Supermarket,1850000,Sekayiga Merigo
+T053,2024-01-03 12:00:00,Kampala,Travel Agency,49000000,Twikirize Precious
+T054,2024-01-03 13:00:00,Mbarara,Coffee Shop,650000,Masika Sharon
+T055,2024-01-03 14:00:00,Entebbe,Electronics World,14500000,Opio Jimmy
+T056,2024-01-03 15:00:00,Gulu,Fast Food,280000,Mbazzi Emmanuel
+T057,2024-01-03 16:00:00,Kampala,Luxury Cars,56000000,Owobusingye Arnold
+T058,2024-01-03 17:00:00,Mbarara,Bookstore,1150000,Ssegawa Benjamin
+T059,2024-01-03 18:00:00,Entebbe,Jewelry Store,32500000,Egonu Patrick
+T060,2024-01-03 19:00:00,Gulu,Supermarket,2050000,Walukagga Akram
+T061,2024-01-03 20:00:00,Kampala,Travel Agency,43000000,Asio Samantha
+T062,2024-01-03 21:00:00,Mbarara,Pharmacy,850000,Nayiga Doreen
+T063,2024-01-03 22:00:00,Entebbe,Electronics World,13500000,Mwiine Martin
+T064,2024-01-03 23:00:00,Gulu,Fast Food,320000,Akampurira Praise
+T065,2024-01-04 00:00:00,Kampala,Luxury Cars,54000000,Nakayima Sonia Naume
 T066,2024-01-04 01:00:00,Mbarara,Bookstore,125,Ssempebwa James
-T067,2024-01-04 02:00:00,Entebbe,Jewelry Store,3550,Odokonyero Christopher
-T068,2024-01-04 03:00:00,Gulu,Supermarket,195,Ahumuza Drake
-T069,2024-01-04 04:00:00,Kampala,Travel Agency,4700,Nanyonjo Gloria
-T070,2024-01-04 05:00:00,Mbarara,Coffee Shop,58,Kayongo Trevour
-T071,2024-01-04 06:00:00,Entebbe,Electronics World,1250,Nabukalu Majorine
-T072,2024-01-04 07:00:00,Gulu,Fast Food,38,Birungi Nicholus
-T073,2024-01-04 08:00:00,Kampala,Luxury Cars,5100,Adokorach Nashiba
-T074,2024-01-04 09:00:00,Mbarara,Bookstore,135,Wabinga Joshua
-T075,2024-01-04 10:00:00,Entebbe,Jewelry Store,3450,Nakkazzi Lydia
-T076,2024-01-04 11:00:00,Gulu,Supermarket,215,Rwantonzi Thomas
-T077,2024-01-04 12:00:00,Kampala,Travel Agency,4600,Ajuna Fortune Ethan
-T078,2024-01-04 13:00:00,Mbarara,Pharmacy,95,Besiime Julian Mbabazi
-T079,2024-01-04 14:00:00,Entebbe,Electronics World,1650,Biyinzika Jovia Nakintu
-T080,2024-01-04 15:00:00,Gulu,Fast Food,42,Akampurira Clinton
-T081,2024-01-04 16:00:00,Kampala,Luxury Cars,5700,Imai Difasi
-T082,2024-01-04 17:00:00,Mbarara,Bookstore,145,Naturinda Shevan
-T083,2024-01-04 18:00:00,Entebbe,Jewelry Store,3150,Nankanja Sarah
-T084,2024-01-04 19:00:00,Gulu,Supermarket,225,Akite Anna Achar
-T085,2024-01-04 20:00:00,Kampala,Travel Agency,4800,Akatwijuka Bless
-T086,2024-01-04 21:00:00,Mbarara,Coffee Shop,68,Ssegayi Ivan
-T087,2024-01-04 22:00:00,Entebbe,Electronics World,1550,Ayesiga Elizabeth
-T088,2024-01-04 23:00:00,Gulu,Fast Food,36,Kalumba Victor Jolly
-T089,2024-01-05 00:00:00,Kampala,Luxury Cars,5200,Sekayiga Merigo
-T090,2024-01-05 01:00:00,Mbarara,Bookstore,130,Twikirize Precious
-T091,2024-01-05 02:00:00,Entebbe,Jewelry Store,3650,Masika Sharon
-T092,2024-01-05 03:00:00,Gulu,Supermarket,205,Opio Jimmy
-T093,2024-01-05 04:00:00,Kampala,Travel Agency,4500,Mbazzi Emmanuel
-T094,2024-01-05 05:00:00,Mbarara,Pharmacy,78,Owobusingye Arnold
-T095,2024-01-05 06:00:00,Entebbe,Electronics World,1450,Ssegawa Benjamin
-T096,2024-01-05 07:00:00,Gulu,Fast Food,29,Egonu Patrick
-T097,2024-01-05 08:00:00,Kampala,Luxury Cars,5300,Walukagga Akram
-T098,2024-01-05 09:00:00,Mbarara,Bookstore,118,Asio Samantha
-T099,2024-01-05 10:00:00,Entebbe,Jewelry Store,3400,Nayiga Doreen
-T100,2024-01-05 11:00:00,Gulu,Supermarket,210,Mwiine Martin
+T067,2024-01-04 02:00:00,Entebbe,Jewelry Store,35500000,Odokonyero Christopher
+T068,2024-01-04 03:00:00,Gulu,Supermarket,19500000,Ahumuza Drake
+T069,2024-01-04 04:00:00,Kampala,Travel Agency,47000000,Nanyonjo Gloria
+T070,2024-01-04 05:00:00,Mbarara,Coffee Shop,580000,Kayongo Trevour
+T071,2024-01-04 06:00:00,Entebbe,Electronics World,12500000,Nabukalu Majorine
+T072,2024-01-04 07:00:00,Gulu,Fast Food,380000,Birungi Nicholus
+T073,2024-01-04 08:00:00,Kampala,Luxury Cars,51000000,Adokorach Nashiba
+T074,2024-01-04 09:00:00,Mbarara,Bookstore,1350000,Wabinga Joshua
+T075,2024-01-04 10:00:00,Entebbe,Jewelry Store,34500000,Nakkazzi Lydia
+T076,2024-01-04 11:00:00,Gulu,Supermarket,2150000,Rwantonzi Thomas
+T077,2024-01-04 12:00:00,Kampala,Travel Agency,46000000,Ajuna Fortune Ethan
+T078,2024-01-04 13:00:00,Mbarara,Pharmacy,950000,Besiime Julian Mbabazi
+T079,2024-01-04 14:00:00,Entebbe,Electronics World,16500000,Biyinzika Jovia Nakintu
+T080,2024-01-04 15:00:00,Gulu,Fast Food,420000,Akampurira Clinton
+T081,2024-01-04 16:00:00,Kampala,Luxury Cars,57000000,Imai Difasi
+T082,2024-01-04 17:00:00,Mbarara,Bookstore,1450000,Naturinda Shevan
+T083,2024-01-04 18:00:00,Entebbe,Jewelry Store,31500000,Nankanja Sarah
+T084,2024-01-04 19:00:00,Gulu,Supermarket,2250000,Akite Anna Achar
+T085,2024-01-04 20:00:00,Kampala,Travel Agency,48000000,Akatwijuka Bless
+T086,2024-01-04 21:00:00,Mbarara,Coffee Shop,680000,Ssegayi Ivan
+T087,2024-01-04 22:00:00,Entebbe,Electronics World,15500000,Ayesiga Elizabeth
+T088,2024-01-04 23:00:00,Gulu,Fast Food,360000,Kalumba Victor Jolly
+T089,2024-01-05 00:00:00,Kampala,Luxury Cars,52000000,Sekayiga Merigo
+T090,2024-01-05 01:00:00,Mbarara,Bookstore,1300000,Twikirize Precious
+T091,2024-01-05 02:00:00,Entebbe,Jewelry Store,36500000,Masika Sharon
+T092,2024-01-05 03:00:00,Gulu,Supermarket,2050000,Opio Jimmy
+T093,2024-01-05 04:00:00,Kampala,Travel Agency,45000000,Mbazzi Emmanuel
+T094,2024-01-05 05:00:00,Mbarara,Pharmacy,780000,Owobusingye Arnold
+T095,2024-01-05 06:00:00,Entebbe,Electronics World,14500000,Ssegawa Benjamin
+T096,2024-01-05 07:00:00,Gulu,Fast Food,290000,Egonu Patrick
+T097,2024-01-05 08:00:00,Kampala,Luxury Cars,53000000,Walukagga Akram
+T098,2024-01-05 09:00:00,Mbarara,Bookstore,1180000,Asio Samantha
+T099,2024-01-05 10:00:00,Entebbe,Jewelry Store,34000000,Nayiga Doreen
+T100,2024-01-05 11:00:00,Gulu,Supermarket,2100000,Mwiine Martin
 
 
 
