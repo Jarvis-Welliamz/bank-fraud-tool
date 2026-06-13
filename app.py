@@ -22,6 +22,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+
 # -----------------------------------------------------------------------------
 # 2. DATA PIPELINE LOADING (Generalized Dynamic Processor)
 # -----------------------------------------------------------------------------
@@ -30,8 +31,8 @@ def load_transaction_data():
     try:
         # Load the user's dataset resource asset
         df = pd.read_csv("transactions.csv")
-        if 'Amount' not in df.columns:
-    raise ValueError("transactions.csv must contain an 'Amount' column")
+if 'Amount' not in df.columns:
+    raise ValueError("Missing required column: Amount")
     if df.empty:raise ValueError("transactions.csv contains no rows")
     
         # Format the core operational tracking vectors
