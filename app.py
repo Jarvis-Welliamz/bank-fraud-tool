@@ -29,52 +29,98 @@ st.markdown("""
 @st.cache_data
 def load_transaction_data():
     try:
-        # Load the user's dataset resource asset
-    df = pd.read_csv("transactions.csv")
+        # Load CSV
+        df = pd.read_csv("transactions.csv")
 
-    if 'Amount' not in df.columns:
-        raise ValueError("transactions.csv must contain an 'Amount' column")
+        # Validate required column
+        if 'Amount' not in df.columns:
+            raise ValueError("transactions.csv must contain an 'Amount' column")
 
-    df['Amount'] = pd.to_numeric(
-        df['Amount'],
-        errors='coerce'
-    ).fillna(0)
+        # Clean amount field
+        df['Amount'] = pd.to_numeric(
+            df['Amount'],
+            errors='coerce'
+        ).fillna(0)
 
-    return df, True, None
+        # Determine customer column
+        if 'Customer Name' in df.columns:
+            customer_col = 'Customer Name'
+        elif len(df.columns) > 1:
+            customer_col = df.columns[-1]
+        else:
+            raise ValueError(
+                "Unable to determine customer identifier column"
+            )
 
-except Exception as e:
-  
-        # Format the core operational tracking vectors
-        df['Amount'] = pd.to_numeric(df['Amount'], errors='coerce').fillna(0)
-        
-        # Robustly compute cross-transaction metadata using whatever values exist in the file
-if 'Customer Name' in df.columns:
-    customer_col = 'Customer Name'
-elif len(df.columns) > 1:
-    customer_col = df.columns[-1]
-else:
-    raise ValueError("Unable to determine customer identifier column")
-        customer_means = df.groupby(customer_col)['Amount'].transform('mean')
-df['Amount_Deviation_Ratio'] = np.where(customer_means > 0,df['Amount'] / customer_means,1.0)
+        # Compute deviation ratio
+        customer_means = (
+            df.groupby(customer_col)['Amount']
+            .transform('mean')
+        )
+
+        df['Amount_Deviation_Ratio'] = np.where(
+            customer_means > 0,
+            df['Amount'] / customer_means,
+            1.0
+        )
+
         return df, True, None
+
     except Exception as e:
-        # Generic backup schema framework structure if file access dropping occurs live
+
+        # Fallback mock data
         mock_data = {
-            'TransactionID': [f'T{i:03d}' for i in range(1, 11)],
-            'Date': [f'2026-06-13 {10+i:02d}:00:00' for i in range(10)],
-            'Location': ['Location Alpha', 'Location Beta', 'Location Gamma'] * 3 + ['Location Alpha'],
-            'Merchant': ['Vendor Group A', 'Vendor Group B', 'Vendor Group C'] * 3 + ['Vendor Group A'],
-            'Customer Name': [f'Account Holder {i}' for i in range(1, 11)],
-            'Amount': [5000000, 7000000, 12000000, 8000000, 45000000,
-        6000000, 5500000, 10000000, 7500000, 9000000]
-            'Customer Name': [f'Account Holder {i}' for i in] # Simulates repeating user indices
+            'TransactionID': [
+                f'T{i:03d}' for i in range(1, 11)
+            ],
+            'Date': [
+                f'2026-06-13 {10+i:02d}:00:00'
+                for i in range(10)
+            ],
+            'Location': [
+                'Location Alpha',
+                'Location Beta',
+                'Location Gamma'
+            ] * 3 + ['Location Alpha'],
+            'Merchant': [
+                'Vendor Group A',
+                'Vendor Group B',
+                'Vendor Group C'
+            ] * 3 + ['Vendor Group A'],
+            'Customer Name': [
+                f'Account Holder {i}'
+                for i in range(1, 11)
+            ],
+            'Amount': [
+                5000000,
+                7000000,
+                12000000,
+                8000000,
+                45000000,
+                6000000,
+                5500000,
+                10000000,
+                7500000,
+                9000000
+            ]
         }
+
         df_mock = pd.DataFrame(mock_data)
-        customer_means = df_mock.groupby('Customer Name')['Amount'].transform('mean')
-df_mock['Amount_Deviation_Ratio'] = (
-    df_mock['Amount'] / (customer_means + 1)
-)
-        return df_mock, False, f"Review fallback deployment pipeline status profile. Trace: {str(e)}"
+
+        customer_means = (
+            df_mock.groupby('Customer Name')['Amount']
+            .transform('mean')
+        )
+
+        df_mock['Amount_Deviation_Ratio'] = (
+            df_mock['Amount'] / (customer_means + 1)
+        )
+
+        return (
+            df_mock,
+            False,
+            f"Fallback mode active. Trace: {str(e)}"
+        )
 
 # Initialize data processing runtime matrix
 real_df, is_real_data, pipeline_alert = load_transaction_data()
