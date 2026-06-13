@@ -329,6 +329,3 @@ with tab3:
 
     
     st.caption("🔍 Validation Framework Insight: Feature weighting dynamically recalibrates based on real-time ledger risk parameters.")
-
-    # Render the chart inside your Streamlit interface
-    st.pyplot(fig)
