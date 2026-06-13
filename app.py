@@ -10,7 +10,7 @@ def generate_data(n=100):
         "AccountNumber": np.random.randint(1000, 1100, n),
         "AmountUGX": np.random.randint(1000, 20000000, n),
         "PhoneNumber": np.random.choice(["0771234567","0787654321","0751112222","0709998888"], n),
-        "Timestamp": pd.date_range("2024-01-01", periods=n, freq="H")
+        "Timestamp": pd.date_range("2024-01-01", periods=n, freq="h")
     }
     df = pd.DataFrame(data)
     return df
