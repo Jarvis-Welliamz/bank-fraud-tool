@@ -299,4 +299,4 @@ with tab2:
     
     col_b1, col_b2, col_b3 = st.columns(3)
     with col_b1:
-        if st.button("🔴 Freeze Selected Accounts", type="primary", use_container_width=True):
+        if st.button("🔴 Freeze Selected Accounts", type="primary", use_container_width=True):pass
