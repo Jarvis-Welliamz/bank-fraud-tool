@@ -9,7 +9,6 @@ def load_data():
 # Fraud detection rules
 def detect_fraud(df):
     flagged = []
-    duplicate_mask = df["Name"].duplicated(keep=False)
 
     for idx, row in df.iterrows():
         reasons = []
