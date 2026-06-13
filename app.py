@@ -9,7 +9,7 @@ def load_data():
 # Fraud detection rules
 def detect_fraud(df):
     flagged = []
-    duplicate_mask = df["TransactionID"].duplicated(keep=False)
+    duplicate_mask = df["Customer Name"].duplicated(keep=False)
 
     for idx, row in df.iterrows():
         reasons = []
@@ -31,7 +31,7 @@ def detect_fraud(df):
                 "Merchant": row["Merchant"],
                 "Amount": row["Amount"],
                 "Location": row["Location"],
-                "TransactionID": row["TransactionID"],
+                "Customer Name": row["Customer Name"],
                 "Timestamp": row["Timestamp"],
                 "Flagged": "☑",
                 "Reason": ", ".join(reasons)
