@@ -230,11 +230,10 @@ st.markdown("---")
 # -----------------------------------------------------------------------------
 # 7. COMMAND CONTROL SYSTEM WORKSPACE TABS
 # -----------------------------------------------------------------------------
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3 = st.tabs([
     "🚨 Live Production Stream", 
     "🕵️‍♂️ Operations Workspace", 
-    "📊 Model Analytics & Explainability" 
-    "📈 Loss & Impact Analytics"
+    "📊 Model Analytics & Explainability"
 ])
 
 # ---- TAB 1: LIVE SIMULATION MONITORING MODE ----
