@@ -12,7 +12,7 @@ def generate_data(n=100):
         "PhoneNumber": np.random.choice(["0771234567","0787654321","0751112222","0709998888"], n),
         "Timestamp": pd.date_range("2024-01-01", periods=n, freq="h")
     }
-    df = pd.DataFrame(data)
+    df = pd.read_csv("transactions.csv")
     return df
 
 # --- Fraud detection rules ---
