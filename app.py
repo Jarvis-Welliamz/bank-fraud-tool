@@ -233,7 +233,7 @@ st.markdown("---")
 tab1, tab2, tab3 = st.tabs([
     "🚨 Live Production Stream", 
     "🕵️‍♂️ Operations Workspace", 
-    "📊 Model Analytics & Explainability"
+    "📊 Model Analytics & Explainability" 
     "📈 Loss & Impact Analytics"
 ])
 
@@ -300,3 +300,36 @@ with tab2:
     col_b1, col_b2, col_b3 = st.columns(3)
     with col_b1:
         if st.button("🔴 Freeze Selected Accounts", type="primary", use_container_width=True):pass
+            
+# ---- TAB 3: MODEL ANALYTICS SUITE (XAI) ----
+with tab3:
+    st.subheader("Explainable AI (XAI) Metric Suite")
+    st.write("Evaluating risk attribute weights driving the systemic decision outcomes:")
+    
+    # Define the key behavioral drivers from your rules engine
+    features = [
+        'Transaction Amount Volume', 
+        'Historical User Variance Profile', 
+        'Merchant Risk Classification', 
+        'Geographic Velocity Signature'
+    ]
+    importance_scores = [0.60, 0.25, 0.10, 0.05]
+    
+    # Generate the visual horizontal bar chart using matplotlib
+    fig, ax = plt.subplots(figsize=(10, 3.5))
+    
+    # Apply a high-contrast red theme to highlight the highest risk weights
+    colors = ['#ff4b4b' if x > 0.20 else '#1f77b4' for x in importance_scores]
+    ax.barh(features, importance_scores, color=colors)
+    
+    # Configure axes, titles, and clean up the chart borders for a modern app look
+    ax.set_xlabel('Algorithmic Feature Decision Weight Profile')
+    ax.set_title('Top Analytical Drivers for Fraud Intervention Indicators')
+    plt.gca().invert_yaxis()
+    
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    plt.tight_layout()
+    
+    # Render the chart inside your Streamlit interface
+    st.pyplot(fig)
