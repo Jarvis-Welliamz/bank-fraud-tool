@@ -33,7 +33,7 @@ def detect_fraud(df):
                 "Amount": row["Amount"],
                 "Location": row["Location"],
                 "Customer Name": row["Customer Name"],
-                "Timestamp": row["Timestamp"],
+                "Date": row["Date"],
                 "Flagged": "☑",
                 "Reason": ", ".join(reasons)
             })
