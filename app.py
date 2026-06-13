@@ -47,7 +47,6 @@ def load_transaction_data():
             'Date': [f'2026-06-13 {10+i:02d}:00:00' for i in range(10)],
             'Location': ['Location Alpha', 'Location Beta', 'Location Gamma'] * 3 + ['Location Alpha'],
             'Merchant': ['Vendor Group A', 'Vendor Group B', 'Vendor Group C'] * 3 + ['Vendor Group A'],
-            'Amount':,
             'Customer Name': [f'Account Holder {i}' for i in] # Simulates repeating user indices
         }
         df_mock = pd.DataFrame(mock_data)
